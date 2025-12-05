@@ -14,14 +14,15 @@ This repository contains the Argo CD Application manifest for the **STAGING** en
 
 ```
 hello-world-argocd-staging/
-├── app-of-apps.yaml                        # Root Application (apply this to Argo CD)
+├── app-of-apps.yaml                  # Root Application
 ├── argocd/
-│   └── hello-world-staging-application.yaml    # STAGING environment Application manifest (auto-synced)
-├── argocd-repository-secret.yaml           # Argo CD repository secrets (configure before applying)
+│   └── hello-world-staging-application.yaml  # STAGING environment Application manifest (auto-synced)
+├── argocd-repository-secret.yaml     # Argo CD repository secrets
 ├── ghcr-credentials-secret.yaml      # GHCR credentials (set once per K8s cluster for organization)
 ├── notifications-configmap.yaml      # Argo CD notifications configuration
-├── setup-argocd.sh                   # Argo CD setup script (execute after secret.yaml files updated)
-└── README.md                               # This file
+├── setup-argocd-cluster.sh           # Argo CD K8s setup script 
+├── setup-argocd.sh                   # Argo CD hello-world-staging essesseff app setup script 
+└── README.md                          # This file
 ```
 
 ## Architecture
