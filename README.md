@@ -84,7 +84,7 @@ hello-world-argocd-staging/
 
 6. **Access the deployed application**:
    ```bash
-   kubectl port-forward service/hello-world-staging 8081:80 -n essesseff-hello-world-flask-template
+   kubectl port-forward service/hello-world-staging 8081:80 -n essesseff-hello-world-nodejs-template
    # Access: http://localhost:8081
    ```
 
@@ -93,7 +93,7 @@ hello-world-argocd-staging/
 - **Name**: `hello-world-staging`
 - **Namespace**: `argocd`
 - **Source Repository**: `hello-world-config-staging`
-- **Destination Namespace**: `essesseff-hello-world-flask-template`
+- **Destination Namespace**: `essesseff-hello-world-nodejs-template`
 - **Sync Policy**: Automated with prune and self-heal enabled
 
 ## Deployment Process
@@ -106,9 +106,9 @@ hello-world-argocd-staging/
 
 ## Repository URLs
 
-- **Source**: `https://github.com/essesseff-hello-world-flask-template/hello-world`
-- **Config STAGING**: `https://github.com/essesseff-hello-world-flask-template/hello-world-config-staging`
-- **Argo CD STAGING**: `https://github.com/essesseff-hello-world-flask-template/hello-world-argocd-staging` (this repo)
+- **Source**: `https://github.com/essesseff-hello-world-nodejs-template/hello-world`
+- **Config STAGING**: `https://github.com/essesseff-hello-world-nodejs-template/hello-world-config-staging`
+- **Argo CD STAGING**: `https://github.com/essesseff-hello-world-nodejs-template/hello-world-argocd-staging` (this repo)
 
 ## essesseff Integration
 
